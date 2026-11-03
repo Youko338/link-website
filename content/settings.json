@@ -1,11 +1,1 @@
-{
-  "textSize": 14,
-  "bodyLineHeight": "1.9",
-  "heroTitleSize": 78,
-  "titleSize": 48,
-  "titleLineHeight": "1.35",
-  "textColor": "#17314d",
-  "headingColor": "#17314d",
-  "accentColor": "#1478bd",
-  "sectionPadding": "100"
-}
+{"accentColor": "#1478bd", "bodyLineHeight": "1.9", "headingColor": "#17314d", "heroBgImage": "/assets/kumamoto-hero.jpg", "heroTitleSize": 78, "sectionPadding": "100", "textColor": "#17314d", "textSize": 14, "titleLineHeight": "1.35", "titleSize": 48}
