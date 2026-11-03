@@ -41,3 +41,6 @@ section:not(.hero){padding:var(--section-pad) 0}
 h2.section-title{font-size:clamp(24px,7.4vw,calc(var(--title-size)*.65))}
 section:not(.hero){padding:calc(var(--section-pad)*.72) 0}
 }
+
+/* 改行対応（2026-11-03）: フォームで入れた改行が、そのままサイトでも改行として表示されます */
+[data-bind]{white-space:pre-line}
