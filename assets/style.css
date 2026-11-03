@@ -22,3 +22,22 @@ footer .links a[aria-current="page"]{color:#fff;text-decoration:underline}
    見出しは指定した改行位置でのみ折り返し、文字サイズも画面幅に合わせて調整 */
 h2.section-title{word-break:keep-all;overflow-wrap:anywhere}
 @media(max-width:700px){h2.section-title{font-size:clamp(24px,7.4vw,31px)}}
+
+/* デザイン設定（2026-11-03）: Pages CMSの「デザイン設定」フォームと連動。
+   content/settings.json の値を content.js が CSS変数に流し込みます。
+   初期値は今までのデザインと完全に同じです。 */
+:root{--text-size:14px;--body-lh:1.9;--hero-size:78px;--title-size:48px;--title-lh:1.35;--heading:#17314d;--section-pad:100px}
+.lead,.notice p,.newsline{font-size:var(--text-size)}
+.card p,.policy,.data-list li{font-size:calc(var(--text-size) - 1px)}
+p{line-height:var(--body-lh)}
+.lead{line-height:calc(var(--body-lh) + .1)}
+.hero h1{font-size:clamp(calc(var(--hero-size)*.55),6.7vw,var(--hero-size))}
+.section-title{font-size:clamp(30px,4vw,var(--title-size));line-height:var(--title-lh)}
+h2,h3{color:var(--heading)}
+section:not(.hero){padding:var(--section-pad) 0}
+.hero.has-bg{background-image:linear-gradient(114deg,rgba(9,31,56,.88),rgba(18,65,106,.84) 75%,rgba(21,59,83,.88)),var(--hero-bg);background-size:cover;background-position:center}
+@media(max-width:700px){
+.hero h1{font-size:clamp(30px,10vw,calc(var(--hero-size)*.69))}
+h2.section-title{font-size:clamp(24px,7.4vw,calc(var(--title-size)*.65))}
+section:not(.hero){padding:calc(var(--section-pad)*.72) 0}
+}

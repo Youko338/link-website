@@ -37,3 +37,43 @@
     })
     .catch(function () { /* フォールバック: HTMLの文章を表示 */ });
 })();
+
+// デザイン設定の読み込み（content/settings.json）
+// 値が範囲外・不正な場合は安全な初期値に丸めます（レイアウトが崩れないためのガード）。
+(function () {
+  fetch("content/settings.json", { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (s) {
+      var root = document.documentElement.style;
+      function num(key, min, max, fallback) {
+        var v = parseFloat(s[key]);
+        if (!isFinite(v)) return fallback;
+        return Math.min(max, Math.max(min, v));
+      }
+      function pick(key, allowed, fallback) {
+        return allowed.indexOf(String(s[key])) >= 0 ? String(s[key]) : fallback;
+      }
+      function color(key, fallback) {
+        var v = String(s[key] || "");
+        return /^#[0-9a-fA-F]{6}$/.test(v) ? v : fallback;
+      }
+      root.setProperty("--text-size", num("textSize", 12, 20, 14) + "px");
+      root.setProperty("--body-lh", pick("bodyLineHeight", ["1.6", "1.75", "1.9", "2.05", "2.2"], "1.9"));
+      root.setProperty("--hero-size", num("heroTitleSize", 40, 110, 78) + "px");
+      root.setProperty("--title-size", num("titleSize", 26, 64, 48) + "px");
+      root.setProperty("--title-lh", pick("titleLineHeight", ["1.2", "1.35", "1.5"], "1.35"));
+      root.setProperty("--section-pad", pick("sectionPadding", ["76", "100", "120"], "100") + "px");
+      root.setProperty("--ink", color("textColor", "#17314d"));
+      root.setProperty("--heading", color("headingColor", "#17314d"));
+      root.setProperty("--blue", color("accentColor", "#1478bd"));
+      var bg = String(s.heroBgImage || "").trim();
+      if (bg) {
+        var hero = document.querySelector(".hero");
+        if (hero) {
+          root.setProperty("--hero-bg", "url('" + bg.replace(/'/g, "") + "')");
+          hero.classList.add("has-bg");
+        }
+      }
+    })
+    .catch(function () { /* 設定が読めない場合は初期デザインで表示 */ });
+})();
