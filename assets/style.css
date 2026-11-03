@@ -126,3 +126,7 @@ section:not(.hero){padding:calc(var(--section-pad)*.72) 0}
 .policy-acc summary::after{content:"\2304";color:var(--blue);font-size:18px;line-height:1}
 .policy-acc[open ] summary::after{content:"\2303"}
 .policy-acc p{padding:0 4px 16px;margin:0}
+
+/* ===== 土台色：引っ張った時に見える色をページ下端に合わせる（2026-11-03） ===== */
+html,body{background:#e8f3fa}
+html.home-dark,html.home-dark body{background:#07294d}
