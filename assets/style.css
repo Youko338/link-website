@@ -48,7 +48,7 @@ section:not(.hero){padding:calc(var(--section-pad)*.72) 0}
 /* トップ改修（2026-11-03）: モック寄りワンヒーロー（写真が下部に溶け込む） */
 .btn-row{flex-wrap:wrap;max-width:600px}
 .hero-line{display:none}
-.hero.has-bg{background-image:linear-gradient(180deg,rgba(9,31,56,.99) 0%,rgba(9,31,56,.985) 26%,rgba(10,38,68,.80) 44%,rgba(10,38,68,.48) 62%,rgba(10,38,68,.22) 80%,rgba(10,38,68,.12) 100%),var(--hero-bg);background-size:cover;background-position:76% 50%}
+.hero.has-bg{background-image:linear-gradient(180deg,rgba(9,31,56,.99) 0%,rgba(9,31,56,.985) 26%,rgba(10,38,68,.80) 44%,rgba(10,38,68,.48) 62%,rgba(10,38,68,.22) 80%,rgba(10,38,68,.12) 100%),var(--hero-bg);background-size:cover;background-position:50% 45%}
 .hero{min-height:720px}
 .hero-inner{min-height:720px;align-items:flex-start}
 .hero-copy{padding:110px 0 250px}
@@ -83,3 +83,14 @@ section:not(.hero){padding:calc(var(--section-pad)*.72) 0}
 }
 
 .photo-hero.soft-fade::after{background:linear-gradient(180deg,rgba(255,255,255,0),var(--light))}
+
+/* ===== トップ確定版：モック再現（2026-11-03） ===== */
+.hero-art{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.hero-inner{position:relative;z-index:3}
+.hero .eyebrow{align-items:flex-start}
+.hero .btn-row{display:grid;grid-template-columns:1fr 1fr;max-width:600px;gap:14px}
+.hero .btn{border-radius:999px;padding:15px 30px;font-size:15px;width:auto;position:relative}
+.hero .btn span{position:absolute;right:16px;font-size:18px}
+@media (max-width:700px){
+  .hero .btn{font-size:14px;padding:14px 26px}
+}
