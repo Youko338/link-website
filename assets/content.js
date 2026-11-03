@@ -67,6 +67,7 @@
       root.setProperty("--heading", color("headingColor", "#17314d"));
       root.setProperty("--blue", color("accentColor", "#1478bd"));
       var bg = String(s.heroBgImage || "").trim();
+      if (bg && !/^(https?:)?\/\//.test(bg) && bg.charAt(0) !== "/") bg = "/" + bg.replace(/^\.\//, "");
       if (bg) {
         var hero = document.querySelector(".hero");
         if (hero) {
