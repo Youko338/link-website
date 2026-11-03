@@ -149,7 +149,7 @@ content:
     type: file
     path: content/privacy.json
     fields:
-      - { name: noteText, label: 草案メモの文章, type: text }
+      - { name: noteText, label: 冒頭の文章, type: text }
       - { name: s1Title, label: 項目1の見出し, type: string }
       - { name: s1Text, label: 項目1の文章, type: text }
       - { name: s2Title, label: 項目2の見出し, type: string }
@@ -158,3 +158,5 @@ content:
       - { name: s3Text, label: 項目3の文章, type: text }
       - { name: s4Title, label: 項目4の見出し, type: string }
       - { name: s4Text, label: 項目4の文章, type: text }
+      - { name: s5Title, label: 項目5の見出し, type: string }
+      - { name: s5Text, label: 項目5の文章, type: text }
