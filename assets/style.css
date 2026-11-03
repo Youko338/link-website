@@ -44,3 +44,10 @@ section:not(.hero){padding:calc(var(--section-pad)*.72) 0}
 
 /* 改行対応（2026-11-03）: フォームで入れた改行が、そのままサイトでも改行として表示されます */
 [data-bind]{white-space:pre-line}
+
+/* トップ改修（2026-11-03）: 四角リンク4つ＋波＋写真バンド */
+.btn-row{flex-wrap:wrap;max-width:600px}
+.hero::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:54px;z-index:3;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0,34 C240,58 480,6 720,24 C960,42 1200,56 1440,28 L1440,60 L0,60 Z' fill='%23ffffff'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
+.photo-band{padding:0!important;background:#fff}
+.photo-band img{display:block;width:100%;height:330px;object-fit:cover}
+@media(max-width:700px){.btn-row{display:grid;grid-template-columns:1fr 1fr}.photo-band img{height:215px}}
