@@ -99,3 +99,7 @@ section:not(.hero){padding:calc(var(--section-pad)*.72) 0}
 .hero{background:linear-gradient(150deg,#04182f,#07294f 55%,#0a3f77)}
 .hero.has-bg{background-image:linear-gradient(180deg,rgba(4,20,40,.995) 0%,rgba(6,32,63,.985) 28%,rgba(8,47,92,.9) 47%,rgba(10,66,128,.6) 64%,rgba(12,84,158,.28) 80%,rgba(12,84,158,.12) 100%),var(--hero-bg);background-position:50% 32%}
 .hero h1 em{color:#b7ec63}
+
+/* ===== トップv4：光沢グラデーションリボン（2026-11-03） ===== */
+.hero.has-bg{background-image:linear-gradient(180deg,rgba(5,26,52,.99) 0%,rgba(7,44,84,.97) 26%,rgba(9,74,138,.85) 46%,rgba(11,102,178,.55) 63%,rgba(13,120,200,.26) 80%,rgba(13,120,200,.12) 100%),var(--hero-bg);background-position:50% 32%}
+.hero h1 em{color:#a5e86e}
