@@ -84,6 +84,9 @@ content:
       - { name: headingLine2, label: 見出し（2行目）, type: string }
       - { name: lead, label: リード文, type: text }
       - { name: companyName, label: 会社名, type: string }
+      - { name: address, label: 所在地, type: string }
+      - { name: established, label: 設立, type: string }
+      - { name: representative, label: 代表者, type: string }
       - { name: businessArea, label: 事業領域, type: string }
       - { name: otherInfoLabel, label: 追加情報の項目名, type: string }
       - { name: otherInfo, label: 追加情報の内容, type: string }
