@@ -17,49 +17,55 @@ content:
         label: 本文の行間
         type: select
         options:
-          - { label: 狭い（1.6）, value: "1.6" }
-          - { label: やや狭い（1.75）, value: "1.75" }
-          - { label: 標準（1.9）, value: "1.9" }
-          - { label: やや広い（2.05）, value: "2.05" }
-          - { label: 広い（2.2）, value: "2.2" }
+          values:
+            - { label: 狭い（1.6）, value: "1.6" }
+            - { label: やや狭い（1.75）, value: "1.75" }
+            - { label: 標準（1.9）, value: "1.9" }
+            - { label: やや広い（2.05）, value: "2.05" }
+            - { label: 広い（2.2）, value: "2.2" }
       - { name: heroTitleSize, label: トップの大見出しサイズ（数字・40〜110）, type: number }
       - { name: titleSize, label: 各ページの見出しサイズ（数字・26〜64）, type: number }
       - name: titleLineHeight
         label: 見出しの行間
         type: select
         options:
-          - { label: 狭い（1.2）, value: "1.2" }
-          - { label: 標準（1.35）, value: "1.35" }
-          - { label: 広い（1.5）, value: "1.5" }
+          values:
+            - { label: 狭い（1.2）, value: "1.2" }
+            - { label: 標準（1.35）, value: "1.35" }
+            - { label: 広い（1.5）, value: "1.5" }
       - name: textColor
         label: 本文の文字色
         type: select
         options:
-          - { label: 標準（濃い紺グレー）, value: "#17314d" }
-          - { label: しっかり黒, value: "#101418" }
-          - { label: やわらかめ, value: "#3c4c5c" }
+          values:
+            - { label: 標準（濃い紺グレー）, value: "#17314d" }
+            - { label: しっかり黒, value: "#101418" }
+            - { label: やわらかめ, value: "#3c4c5c" }
       - name: headingColor
         label: 見出しの色
         type: select
         options:
-          - { label: 標準（濃い紺グレー）, value: "#17314d" }
-          - { label: 濃紺, value: "#0b243f" }
-          - { label: 青, value: "#1478bd" }
+          values:
+            - { label: 標準（濃い紺グレー）, value: "#17314d" }
+            - { label: 濃紺, value: "#0b243f" }
+            - { label: 青, value: "#1478bd" }
       - name: accentColor
         label: アクセント色（リンク・ボタンなど）
         type: select
         options:
-          - { label: 標準の青, value: "#1478bd" }
-          - { label: 明るい青, value: "#1d95d8" }
-          - { label: 緑, value: "#2e9e6b" }
-          - { label: 落ち着いた紺, value: "#0f4c81" }
+          values:
+            - { label: 標準の青, value: "#1478bd" }
+            - { label: 明るい青, value: "#1d95d8" }
+            - { label: 緑, value: "#2e9e6b" }
+            - { label: 落ち着いた紺, value: "#0f4c81" }
       - name: sectionPadding
         label: ページの余白の広さ
         type: select
         options:
-          - { label: コンパクト, value: "76" }
-          - { label: 標準, value: "100" }
-          - { label: ゆったり, value: "120" }
+          values:
+            - { label: コンパクト, value: "76" }
+            - { label: 標準, value: "100" }
+            - { label: ゆったり, value: "120" }
       - { name: heroBgImage, label: トップの背景画像（空なら今まで通り）, type: image }
   - name: home
     label: トップ
