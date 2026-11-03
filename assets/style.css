@@ -108,3 +108,21 @@ section:not(.hero){padding:calc(var(--section-pad)*.72) 0}
 .hero.has-bg{background-image:var(--hero-bg);background-size:cover;background-position:50% 30%}
 .hero h1 em{color:#8fe3b8}
 .hero p{color:#dceefb}
+
+/* ===== 仕上げ：全体バランス調整（2026-11-03） ===== */
+.hero .bottom-glow{display:none}
+.hero h1{text-shadow:0 2px 18px rgba(4,24,48,.35)}
+.hero p{text-shadow:0 1px 10px rgba(4,24,48,.45)}
+.hero .btn.secondary{background:rgba(7,35,66,.32);border-color:rgba(255,255,255,.8);backdrop-filter:blur(3px)}
+@media (min-width:1000px){.hero.has-bg{background-position:50% 22%}}
+.card{padding:0 0 24px;overflow:hidden}
+.card>*:not(.card-thumb){margin-left:24px;margin-right:24px}
+.card small{margin-top:20px;display:block}
+.card-thumb{width:100%;height:150px;object-fit:cover;display:block}
+.policy-acc{border-top:1px solid var(--line)}
+.policy-acc:last-of-type{border-bottom:1px solid var(--line)}
+.policy-acc summary{cursor:pointer;font-weight:800;color:var(--ink);font-size:14px;padding:14px 4px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.policy-acc summary::-webkit-details-marker{display:none}
+.policy-acc summary::after{content:"\2304";color:var(--blue);font-size:18px;line-height:1}
+.policy-acc[open ] summary::after{content:"\2303"}
+.policy-acc p{padding:0 4px 16px;margin:0}
