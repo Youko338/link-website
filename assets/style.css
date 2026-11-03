@@ -17,3 +17,8 @@ footer{background:#091d33;color:#c0d4e1;padding:60px 0 22px}footer img{width:160
 /* --- ページ分け用に追加（2026-11-03）: 今いるページをメニューで色付け --- */
 .nav a[aria-current="page"],.mobile-links a[aria-current="page"]{color:var(--blue)}
 footer .links a[aria-current="page"]{color:#fff;text-decoration:underline}
+
+/* 見出しの改行調整（2026-11-03）: スマホで「を、」だけが行に残らないよう、
+   見出しは指定した改行位置でのみ折り返し、文字サイズも画面幅に合わせて調整 */
+h2.section-title{word-break:keep-all;overflow-wrap:anywhere}
+@media(max-width:700px){h2.section-title{font-size:clamp(24px,7.4vw,31px)}}
