@@ -94,3 +94,8 @@ section:not(.hero){padding:calc(var(--section-pad)*.72) 0}
 @media (max-width:700px){
   .hero .btn{font-size:14px;padding:14px 26px}
 }
+
+/* ===== トップ修正版v3：ネイビー基調＋ロゴ色リボン（2026-11-03） ===== */
+.hero{background:linear-gradient(150deg,#04182f,#07294f 55%,#0a3f77)}
+.hero.has-bg{background-image:linear-gradient(180deg,rgba(4,20,40,.995) 0%,rgba(6,32,63,.985) 28%,rgba(8,47,92,.9) 47%,rgba(10,66,128,.6) 64%,rgba(12,84,158,.28) 80%,rgba(12,84,158,.12) 100%),var(--hero-bg);background-position:50% 32%}
+.hero h1 em{color:#b7ec63}
