@@ -1,0 +1,97 @@
+# Pages CMS 設定（フォーム編集用・コード不要）
+# 文章は content/*.json に入っています。Pages CMSでは入力フォームとして表示されます。
+# HTMLファイル自体は登録していません（コードを見なくて済むようにするため）。
+
+media:
+  input: assets
+  output: /assets
+
+content:
+  - name: home
+    label: トップ
+    type: file
+    path: content/home.json
+    fields:
+      - { name: heroTitleLine1, label: キャッチコピー（1行目）, type: string }
+      - { name: heroTitleLine2, label: キャッチコピー（2行目・色付き）, type: string }
+      - { name: heroText, label: 説明文, type: text }
+  - name: company
+    label: 会社案内
+    type: file
+    path: content/company.json
+    fields:
+      - { name: headingLine1, label: 見出し（1行目）, type: string }
+      - { name: headingLine2, label: 見出し（2行目）, type: string }
+      - { name: lead, label: リード文, type: text }
+      - { name: companyName, label: 会社名, type: string }
+      - { name: businessArea, label: 事業領域, type: string }
+      - { name: otherInfoLabel, label: 追加情報の項目名, type: string }
+      - { name: otherInfo, label: 追加情報の内容, type: string }
+      - { name: valueLine1, label: 大切にする価値（1行目）, type: string }
+      - { name: valueLine2, label: 大切にする価値（2行目）, type: string }
+  - name: business
+    label: 事業内容
+    type: file
+    path: content/business.json
+    fields:
+      - { name: lead, label: リード文, type: text }
+      - { name: card1Title, label: カード1の見出し, type: string }
+      - { name: card1Text, label: カード1の説明, type: text }
+      - { name: card2Title, label: カード2の見出し, type: string }
+      - { name: card2Text, label: カード2の説明, type: text }
+      - { name: card3Title, label: カード3の見出し, type: string }
+      - { name: card3Text, label: カード3の説明, type: text }
+      - { name: banner1Title, label: バナー1の見出し, type: string }
+      - { name: banner1Text, label: バナー1の説明, type: string }
+      - { name: banner2Title, label: バナー2の見出し, type: string }
+      - { name: banner2Text, label: バナー2の説明, type: string }
+      - { name: banner3Title, label: バナー3の見出し, type: string }
+      - { name: banner3Text, label: バナー3の説明, type: string }
+  - name: recruit
+    label: 採用情報
+    type: file
+    path: content/recruit.json
+    fields:
+      - { name: headingLine1, label: 見出し（1行目）, type: string }
+      - { name: headingLine2, label: 見出し（2行目）, type: string }
+      - { name: lead, label: リード文, type: text }
+      - { name: noticeTag, label: お知らせ枠のラベル, type: string }
+      - { name: noticeTitle, label: お知らせ枠の見出し, type: string }
+      - { name: noticeText, label: お知らせ枠の文章, type: text }
+  - name: news
+    label: お知らせ
+    type: file
+    path: content/news.json
+    fields:
+      - { name: note, label: 一覧の下の注釈, type: string }
+      - name: items
+        label: お知らせ一覧（上が新しい順に並べてください）
+        type: object
+        list: true
+        fields:
+          - { name: date, label: 日付（例 2026-11-10）, type: string }
+          - { name: tag, label: 分類（例 お知らせ／採用）, type: string }
+          - { name: title, label: タイトル, type: string }
+  - name: contact
+    label: お問い合わせ
+    type: file
+    path: content/contact.json
+    fields:
+      - { name: lead, label: リード文, type: text }
+      - { name: noticeTag, label: 枠のラベル, type: string }
+      - { name: noticeTitle, label: 枠の見出し, type: string }
+      - { name: noticeText, label: 枠の文章, type: text }
+  - name: privacy
+    label: プライバシーポリシー
+    type: file
+    path: content/privacy.json
+    fields:
+      - { name: noteText, label: 草案メモの文章, type: text }
+      - { name: s1Title, label: 項目1の見出し, type: string }
+      - { name: s1Text, label: 項目1の文章, type: text }
+      - { name: s2Title, label: 項目2の見出し, type: string }
+      - { name: s2Text, label: 項目2の文章, type: text }
+      - { name: s3Title, label: 項目3の見出し, type: string }
+      - { name: s3Text, label: 項目3の文章, type: text }
+      - { name: s4Title, label: 項目4の見出し, type: string }
+      - { name: s4Text, label: 項目4の文章, type: text }
