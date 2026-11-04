@@ -80,6 +80,7 @@ content:
     type: file
     path: content/company.json
     fields:
+      - { name: bannerImage, label: バナー画像, type: image }
       - { name: headingLine1, label: 見出し（1行目）, type: string }
       - { name: headingLine2, label: 見出し（2行目）, type: string }
       - { name: lead, label: リード文, type: text }
@@ -97,6 +98,7 @@ content:
     type: file
     path: content/business.json
     fields:
+      - { name: bannerImage, label: バナー画像, type: image }
       - { name: lead, label: リード文, type: text }
       - { name: card1Title, label: カード1の見出し, type: string }
       - { name: card1Text, label: カード1の説明, type: text }
@@ -113,6 +115,7 @@ content:
     type: file
     path: content/recruit.json
     fields:
+      - { name: bannerImage, label: バナー画像, type: image }
       - { name: headingLine1, label: 見出し（1行目）, type: string }
       - { name: headingLine2, label: 見出し（2行目）, type: string }
       - { name: lead, label: リード文, type: text }
@@ -124,6 +127,7 @@ content:
     type: file
     path: content/news.json
     fields:
+      - { name: bannerImage, label: バナー画像, type: image }
       - { name: note, label: 一覧の下の注釈, type: string }
       - name: items
         label: お知らせ一覧（上が新しい順に並べてください）
@@ -138,6 +142,7 @@ content:
     type: file
     path: content/contact.json
     fields:
+      - { name: bannerImage, label: バナー画像, type: image }
       - { name: lead, label: リード文, type: text }
       - { name: noticeTag, label: 枠のラベル, type: string }
       - { name: noticeTitle, label: 枠の見出し, type: string }
@@ -147,6 +152,7 @@ content:
     type: file
     path: content/privacy.json
     fields:
+      - { name: bannerImage, label: バナー画像, type: image }
       - { name: noteText, label: 冒頭の文章, type: text }
       - { name: s1Title, label: 項目1の見出し, type: string }
       - { name: s1Text, label: 項目1の文章, type: text }
