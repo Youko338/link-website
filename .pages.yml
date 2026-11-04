@@ -102,8 +102,6 @@ content:
       - { name: card1Text, label: カード1の説明, type: text }
       - { name: card2Title, label: カード2の見出し, type: string }
       - { name: card2Text, label: カード2の説明, type: text }
-      - { name: card3Title, label: カード3の見出し, type: string }
-      - { name: card3Text, label: カード3の説明, type: text }
       - { name: banner1Title, label: バナー1の見出し, type: string }
       - { name: banner1Text, label: バナー1の説明, type: string }
       - { name: banner2Title, label: バナー2の見出し, type: string }
