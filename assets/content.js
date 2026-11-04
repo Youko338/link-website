@@ -12,6 +12,15 @@
         if (key === "items") return;
         var value = data[key];
         if (typeof value !== "string") return;
+        if (key === "bannerImage") {
+          var bgEl = document.querySelector(".ph-bg");
+          var b = value.trim();
+          if (bgEl && b && !/^(https?:)?\/\//.test(b)) {
+            if (b.charAt(0) !== "/") b = "/" + b.replace(/^\.\//, "");
+            bgEl.style.backgroundImage = "url('" + b.replace(/'/g, "") + "')";
+          }
+          return;
+        }
         document.querySelectorAll('[data-bind="' + key + '"]').forEach(function (el) {
           el.textContent = value;
         });
