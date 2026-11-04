@@ -152,7 +152,12 @@ html,body{overscroll-behavior:none}
 .page-head{aspect-ratio:auto;max-height:none;min-height:330px}
 .ph-bg{background-position:28% 50%}
 .ph-news{background-position:78% 50%}
-.ph-bg::after{background:linear-gradient(180deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.90) 52%,rgba(255,255,255,.62) 100%)}
+.ph-biz{background-position:68% 50%}
+.ph-rec{background-position:62% 50%}
+.ph-com{background-position:48% 50%}
+.ph-con{background-position:58% 50%}
+.ph-pri{background-position:62% 50%}
+.ph-bg::after{background:linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.78) 38%,rgba(255,255,255,.25) 68%,rgba(255,255,255,0) 88%)}
 .ph-curve{height:62px}
 .page-head .lead{max-width:100%}
 }
