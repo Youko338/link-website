@@ -1,1 +1,9 @@
-{"bannerImage":"/assets/head-recruit.jpg","headingLine1":"人と仕事の、","headingLine2":"新しいつながりへ。","lead":"合同会社Linkの採用ページです。募集状況については、こちらのページでお知らせします。","noticeTag":"採用について","noticeText":"募集を再開する際は、こちらのページであらためてお知らせします。","noticeTitle":"現在、採用の募集は行っておりません。"}
+{
+  "bannerImage": "/assets/photo-recruit.jpg",
+  "headingLine1": "人と仕事の、",
+  "headingLine2": "新しいつながりへ。",
+  "lead": "合同会社Linkの採用ページです。募集状況については、こちらのページでお知らせします。",
+  "noticeTag": "採用について",
+  "noticeText": "募集を再開する際は、こちらのページであらためてお知らせします。",
+  "noticeTitle": "現在、採用の募集は行っておりません。"
+}
