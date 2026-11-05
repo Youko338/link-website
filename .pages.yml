@@ -128,6 +128,7 @@ content:
     path: content/news.json
     fields:
       - { name: bannerImage, label: バナー画像, type: image }
+      - { name: lead, label: リード文, type: text }
       - { name: note, label: 一覧の下の注釈, type: string }
       - name: items
         label: お知らせ一覧（上が新しい順に並べてください）
@@ -153,6 +154,7 @@ content:
     path: content/privacy.json
     fields:
       - { name: bannerImage, label: バナー画像, type: image }
+      - { name: lead, label: リード文, type: text }
       - { name: noteText, label: 冒頭の文章, type: text }
       - { name: s1Title, label: 項目1の見出し, type: string }
       - { name: s1Text, label: 項目1の文章, type: text }
