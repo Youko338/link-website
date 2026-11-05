@@ -171,3 +171,17 @@ html,body{overscroll-behavior:none}
 .ph-curve{height:62px}
 .page-head .lead{max-width:100%}
 }
+
+/* ===== Tall supplied-original header (business first, 2026-11-05) ===== */
+.page-head.tall{aspect-ratio:1/1.02;height:auto;max-height:none;width:min(900px,calc(100% - 40px));align-items:flex-start}
+.page-head.tall .ph-in{padding-top:44px}
+.page-head.tall .eyebrow{color:#0f74c9;font-size:15px;letter-spacing:.14em;display:inline-block;border-bottom:6px solid #58b368;border-radius:3px;padding-bottom:10px;margin-bottom:16px}
+.page-head.tall .section-title{font-size:clamp(44px,4.6vw,64px)}
+.page-head.tall .ph-bg::after{background:none}
+.page-head.tall .ph-biz{background-position:50% 50%}
+@media (max-width:700px){
+.page-head.tall{width:calc(100% - 24px);min-height:0}
+.page-head.tall .ph-in{padding-top:30px}
+.page-head.tall .ph-bg::after{background:linear-gradient(180deg,rgba(255,255,255,.75) 0%,rgba(255,255,255,.58) 34%,rgba(255,255,255,.3) 54%,rgba(255,255,255,0) 70%)}
+.page-head.tall .section-title,.page-head.tall .lead{text-shadow:0 1px 12px rgba(255,255,255,.7),0 0 3px rgba(255,255,255,.85)}
+}
