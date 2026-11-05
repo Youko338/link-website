@@ -185,3 +185,10 @@ html,body{overscroll-behavior:none}
 .page-head.tall .ph-bg::after{background:linear-gradient(180deg,rgba(255,255,255,.75) 0%,rgba(255,255,255,.58) 34%,rgba(255,255,255,.3) 54%,rgba(255,255,255,0) 70%)}
 .page-head.tall .section-title,.page-head.tall .lead{text-shadow:0 1px 12px rgba(255,255,255,.7),0 0 3px rgba(255,255,255,.85)}
 }
+
+/* ===== Logo inside the tall header (2026-11-05, Yfut decision) ===== */
+header.no-brand .brand{visibility:hidden}
+.ph-logo{display:block;width:200px;height:auto;margin-bottom:20px}
+.page-head.tall .eyebrow{border-bottom:none;padding-bottom:0;margin-bottom:26px;position:relative}
+.page-head.tall .eyebrow::after{content:"";position:absolute;left:0;bottom:-14px;width:64px;height:7px;border-radius:99px;background:linear-gradient(90deg,#8edd2e,#5fc46a)}
+@media (max-width:700px){.ph-logo{width:128px;margin-bottom:16px}}
