@@ -80,6 +80,11 @@ content:
     type: file
     path: content/company.json
     fields:
+      - { name: detailTitle, label: 詳細セクションの見出し, type: string }
+      - { name: detail1Title, label: 詳細1の見出し, type: string }
+      - { name: detail1Text, label: 詳細1の本文, type: text }
+      - { name: detail2Title, label: 詳細2の見出し, type: string }
+      - { name: detail2Text, label: 詳細2の本文, type: text }
       - { name: bannerImage, label: バナー画像, type: image }
       - { name: headingLine1, label: 見出し（1行目）, type: string }
       - { name: headingLine2, label: 見出し（2行目）, type: string }
@@ -98,6 +103,11 @@ content:
     type: file
     path: content/business.json
     fields:
+      - { name: detailTitle, label: 詳細セクションの見出し, type: string }
+      - { name: detail1Title, label: 詳細1の見出し, type: string }
+      - { name: detail1Text, label: 詳細1の本文, type: text }
+      - { name: detail2Title, label: 詳細2の見出し, type: string }
+      - { name: detail2Text, label: 詳細2の本文, type: text }
       - { name: bannerImage, label: バナー画像, type: image }
       - { name: lead, label: リード文, type: text }
       - { name: card1Title, label: カード1の見出し, type: string }
@@ -115,6 +125,11 @@ content:
     type: file
     path: content/recruit.json
     fields:
+      - { name: detailTitle, label: 詳細セクションの見出し, type: string }
+      - { name: detail1Title, label: 詳細1の見出し, type: string }
+      - { name: detail1Text, label: 詳細1の本文, type: text }
+      - { name: detail2Title, label: 詳細2の見出し, type: string }
+      - { name: detail2Text, label: 詳細2の本文, type: text }
       - { name: bannerImage, label: バナー画像, type: image }
       - { name: headingLine1, label: 見出し（1行目）, type: string }
       - { name: headingLine2, label: 見出し（2行目）, type: string }
@@ -127,6 +142,11 @@ content:
     type: file
     path: content/news.json
     fields:
+      - { name: detailTitle, label: 詳細セクションの見出し, type: string }
+      - { name: detail1Title, label: 詳細1の見出し, type: string }
+      - { name: detail1Text, label: 詳細1の本文, type: text }
+      - { name: detail2Title, label: 詳細2の見出し, type: string }
+      - { name: detail2Text, label: 詳細2の本文, type: text }
       - { name: bannerImage, label: バナー画像, type: image }
       - { name: lead, label: リード文, type: text }
       - { name: note, label: 一覧の下の注釈, type: string }
@@ -143,6 +163,11 @@ content:
     type: file
     path: content/contact.json
     fields:
+      - { name: detailTitle, label: 詳細セクションの見出し, type: string }
+      - { name: detail1Title, label: 詳細1の見出し, type: string }
+      - { name: detail1Text, label: 詳細1の本文, type: text }
+      - { name: detail2Title, label: 詳細2の見出し, type: string }
+      - { name: detail2Text, label: 詳細2の本文, type: text }
       - { name: bannerImage, label: バナー画像, type: image }
       - { name: lead, label: リード文, type: text }
       - { name: noticeTag, label: 枠のラベル, type: string }
@@ -153,6 +178,9 @@ content:
     type: file
     path: content/privacy.json
     fields:
+      - { name: detailTitle, label: 詳細セクションの見出し, type: string }
+      - { name: detail1Title, label: 詳細1の見出し, type: string }
+      - { name: detail1Text, label: 詳細1の本文, type: text }
       - { name: bannerImage, label: バナー画像, type: image }
       - { name: lead, label: リード文, type: text }
       - { name: noteText, label: 冒頭の文章, type: text }
@@ -166,3 +194,33 @@ content:
       - { name: s4Text, label: 項目4の文章, type: text }
       - { name: s5Title, label: 項目5の見出し, type: string }
       - { name: s5Text, label: 項目5の文章, type: text }
+
+  - name: values
+    label: Linkが大切にすること
+    type: file
+    path: content/values.json
+    fields:
+      - { name: detailTitle, label: 詳細セクションの見出し, type: string }
+      - { name: detail1Title, label: 詳細1の見出し, type: string }
+      - { name: detail1Text, label: 詳細1の本文, type: text }
+      - { name: detail2Title, label: 詳細2の見出し, type: string }
+      - { name: detail2Text, label: 詳細2の本文, type: text }
+      - { name: detail3Title, label: 詳細3の見出し, type: string }
+      - { name: detail3Text, label: 詳細3の本文, type: text }
+      - { name: bannerImage, label: バナー画像, type: image }
+      - { name: lead, label: リード文, type: text }
+
+  - name: quality
+    label: 安全・品質への取り組み
+    type: file
+    path: content/quality.json
+    fields:
+      - { name: detailTitle, label: 詳細セクションの見出し, type: string }
+      - { name: detail1Title, label: 詳細1の見出し, type: string }
+      - { name: detail1Text, label: 詳細1の本文, type: text }
+      - { name: detail2Title, label: 詳細2の見出し, type: string }
+      - { name: detail2Text, label: 詳細2の本文, type: text }
+      - { name: detail3Title, label: 詳細3の見出し, type: string }
+      - { name: detail3Text, label: 詳細3の本文, type: text }
+      - { name: bannerImage, label: バナー画像, type: image }
+      - { name: lead, label: リード文, type: text }
