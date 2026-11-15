@@ -2,5 +2,10 @@
   "bannerImage": "/assets/original-news-tall.jpg",
   "lead": "当社からの最新情報をお届けします。",
   "note": "新しいお知らせがある場合は、こちらに掲載いたします。",
-  "items": []
+  "items": [],
+  "detailTitle": "掲載する情報について",
+  "detail1Title": "サイトや事業に関するご案内",
+  "detail1Text": "公式サイトの更新や当社からのお知らせを、このページに掲載します。",
+  "detail2Title": "採用情報をお探しの方へ",
+  "detail2Text": "現在の募集状況や、募集時のご案内は採用情報ページをご確認ください。"
 }
