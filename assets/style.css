@@ -279,3 +279,8 @@ body{height:100vh;height:100dvh;display:grid;grid-template-rows:auto minmax(0,1f
 .ph-bg::after{background:radial-gradient(ellipse 60% 54% at 15% 24%,rgba(255,255,255,.95) 0%,rgba(255,255,255,.75) 45%,rgba(255,255,255,.25) 68%,rgba(255,255,255,0) 84%)}
 .page-head.tall .ph-bg::after{background:radial-gradient(ellipse 60% 54% at 15% 24%,rgba(255,255,255,.95) 0%,rgba(255,255,255,.75) 45%,rgba(255,255,255,.25) 68%,rgba(255,255,255,0) 84%)}
 .page-head.tall .ph-bg.ph-landscape::after{background:radial-gradient(ellipse 60% 54% at 15% 24%,rgba(255,255,255,.95) 0%,rgba(255,255,255,.75) 45%,rgba(255,255,255,.25) 68%,rgba(255,255,255,0) 84%)}
+
+/* 2026-11-16 修正指示: カード本文の段落改行と見出しバランス */
+.editorial-card p{white-space:pre-line}
+h2.section-title{text-wrap:balance}
+.editorial-links{margin:6px 0 10px}
